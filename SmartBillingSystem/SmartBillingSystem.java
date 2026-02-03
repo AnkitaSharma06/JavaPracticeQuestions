@@ -1,3 +1,4 @@
+package SmartBillingSystem;
 import java.util.Scanner;
 class SmartBillingSystem {
     public static void main(String[] args) {
