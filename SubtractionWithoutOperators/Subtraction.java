@@ -4,10 +4,11 @@ import java.util.Scanner;
 class Subtraction {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter first number: ");
+        System.out.print("Enter first number: ");
         int num1 = sc.nextInt();
         System.out.print("Enter second number: ");
         int num2 = sc.nextInt();
+        num2 = ~num2;
         int carry = 1;
         while (carry != 0) {
             int temp = num2 ^ carry;
