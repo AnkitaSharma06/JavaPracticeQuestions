@@ -5,15 +5,15 @@ public class Addition {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number: ");
-        int a = sc.nextInt();
+        int num1 = sc.nextInt();
         System.out.println("Enter second number: ");
-        int b = sc.nextInt();
-        while (b != 0) {
-            int carry = (a & b) << 1;
-            a = a ^ b;
-            b = carry;
+        int num2 = sc.nextInt();
+        while (num2 != 0) {
+            int carry = (num1 & num2) << 1;
+            num1 = num1 ^ num2;
+            num2 = carry;
         }
-        System.out.println("Sum = " + a);
+        System.out.println("Sum = " + num1);
         sc.close();
     }
 }
